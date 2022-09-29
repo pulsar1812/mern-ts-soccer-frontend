@@ -1,9 +1,16 @@
-import React from 'react'
-import logo from './logo.svg'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import './App.css'
+import GamesPage from './features/games/GamesPage'
 
 function App() {
-  return <div className='App'>MERN-TS-Soccer</div>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<GamesPage />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App
