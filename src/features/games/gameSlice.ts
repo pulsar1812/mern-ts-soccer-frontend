@@ -45,7 +45,7 @@ export const createGame = createAsyncThunk<Object, Game>(
 )
 
 const gameSlice = createSlice({
-  name: 'game',
+  name: 'games',
   initialState,
   reducers: {
     setGames: (state, action: PayloadAction<Game[]>) => {
